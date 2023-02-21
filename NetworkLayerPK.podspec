@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "NetworkLayerPK"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "A CocoaPods library written in Swift"
 
   # This description is used to generate tags and improve search results.
@@ -137,5 +137,5 @@ Pod::Spec.new do |spec|
     spec.dependency "Alamofire", "~> 5.6.3"
     spec.dependency "SwiftKeychainWrapper", "~> 4.0.1"
     spec.dependency "SwiftyBeaver", "~> 1.9.5"
-    spec.vendored_frameworks = 'NetworkLayerPK.xcframework'
+    spec.vendored_frameworks = "NetworkLayerPK.xcframework"
 end
