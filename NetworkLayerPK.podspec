@@ -137,5 +137,4 @@ Pod::Spec.new do |spec|
     spec.dependency "Alamofire", "~> 5.6.3"
     spec.dependency "SwiftKeychainWrapper", "~> 4.0.1"
     spec.dependency "SwiftyBeaver", "~> 1.9.5"
-    spec.vendored_frameworks = "NetworkLayerPK.xcframework"
 end
