@@ -1,0 +1,43 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name NetworkLayer
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Alamofire
+import Foundation
+import Moya
+@_exported import NetworkLayer
+import Swift
+import _Concurrency
+import _StringProcessing
+@_hasMissingDesignatedInitializers final public class NetworkLayer {
+  public static let shared: NetworkLayer.NetworkLayer
+  final public var baseUrl: Swift.String
+  final public var apiKey: Swift.String
+  @objc deinit
+}
+public enum NetworkLayerService {
+  public static var provider: Moya.MoyaProvider<NetworkLayer.NetworkLayerService> {
+    get
+  }
+  case postRequest(params: [Swift.String : Any])
+}
+extension NetworkLayer.NetworkLayerService : Moya.TargetType {
+  public var task: Moya.Task {
+    get
+  }
+  public var headers: [Swift.String : Swift.String]? {
+    get
+  }
+  public var baseURL: Foundation.URL {
+    get
+  }
+  public var path: Swift.String {
+    get
+  }
+  public var method: Moya.Method {
+    get
+  }
+  public var sampleData: Foundation.Data {
+    get
+  }
+}
